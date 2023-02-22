@@ -1,0 +1,30 @@
+[08-Dec-2022 07:14:05 America/Chicago] PHP Warning:  require_once(/home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets): Failed to open stream: No such file or directory in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:14:05 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php:15
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php(55): writeCaptcha('112')
+#1 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:15 America/Chicago] PHP Warning:  require_once(/home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets): Failed to open stream: No such file or directory in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:15 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php:15
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php(57): writeCaptcha('112')
+#1 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:32 America/Chicago] PHP Warning:  require_once(/home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets): Failed to open stream: No such file or directory in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php:15
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php(57): writeCaptcha('112')
+#1 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:32 America/Chicago] PHP Warning:  require_once(/home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets): Failed to open stream: No such file or directory in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:32 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php:15
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php(57): writeCaptcha('112')
+#1 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:34 America/Chicago] PHP Warning:  require_once(/home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets): Failed to open stream: No such file or directory in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15
+[08-Dec-2022 07:16:34 America/Chicago] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php:15
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php(57): writeCaptcha('112')
+#1 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/assets/captcha.php on line 15

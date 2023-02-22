@@ -1,0 +1,41 @@
+[01-Dec-2022 08:52:02 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.25. in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/composer/platform_check.php on line 24
+[01-Dec-2022 08:52:11 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.25. in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/composer/platform_check.php on line 24
+[15-Dec-2022 12:00:48 America/Chicago] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(642): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(623): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(554): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#5 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse(Object(Illuminate\Http\Request), Object(RuntimeException))
+#6 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(493): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(RuntimeException))
+#7 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(138): Illuminate\Foundation\Http\Kernel->renderException(Object(Illuminate\Http\Request), Object(RuntimeException))
+#8 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
+[15-Dec-2022 12:00:53 America/Chicago] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(642): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(623): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(554): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#5 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse(Object(Illuminate\Http\Request), Object(RuntimeException))
+#6 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(493): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(RuntimeException))
+#7 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(138): Illuminate\Foundation\Http\Kernel->renderException(Object(Illuminate\Http\Request), Object(RuntimeException))
+#8 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
+[15-Dec-2022 12:00:56 America/Chicago] PHP Fatal error:  Uncaught RuntimeException: A facade root has not been set. in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php:335
+Stack trace:
+#0 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\Support\Facades\Facade::__callStatic('replaceNamespac...', Array)
+#1 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(642): Illuminate\Foundation\Exceptions\RegisterErrorViewPaths->__invoke()
+#2 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(623): Illuminate\Foundation\Exceptions\Handler->registerErrorViewPaths()
+#3 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(554): Illuminate\Foundation\Exceptions\Handler->renderHttpException(Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#4 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(460): Illuminate\Foundation\Exceptions\Handler->prepareResponse(Object(Illuminate\Http\Request), Object(Symfony\Component\HttpKernel\Exception\HttpException))
+#5 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(377): Illuminate\Foundation\Exceptions\Handler->renderExceptionResponse(Object(Illuminate\Http\Request), Object(RuntimeException))
+#6 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(493): Illuminate\Foundation\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(RuntimeException))
+#7 /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(138): Illuminate\Foundation\Http\Kernel->renderException(Object(Illuminate\Http\Request), Object(RuntimeException))
+#8 /home1/aiimsb5e/uat.aiimsrbl.edu.in/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
+#9 {main}
+  thrown in /home1/aiimsb5e/uat.aiimsrbl.edu.in/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php on line 335
