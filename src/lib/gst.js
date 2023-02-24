@@ -66,3 +66,25 @@ export const notificationOrderDetail = async (param) => {
     throw new Error(error.message);
   }
 };
+
+export const lawDetail = async (param) => {
+  try {
+    const apiurl = URL + "/gst/law/" + param.slug;
+    const response = await fetch(apiurl);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};
+
+export const gstFormDetail = async (param) => {
+  try {
+    const apiurl = URL + "/gst/forms/" + param.slug;
+    const response = await fetch(apiurl);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};

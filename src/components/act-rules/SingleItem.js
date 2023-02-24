@@ -2,9 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SingleItem = (props) => {
+  const { pageNo, index } = props;
+  let sr;
+  if (pageNo > 1) {
+    sr = parseInt(pageNo) + parseInt(index) + 1;
+  } else {
+    sr = parseInt(pageNo) + parseInt(index);
+  }
   return (
     <tr>
-      <td>1-</td>
+      <td>{sr}-</td>
       <td>
         <p>
           <Link

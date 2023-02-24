@@ -3,6 +3,7 @@ import Notifications from "./Notifications";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Law from "./Law";
+import GstForms from "./GstForms";
 
 const GstPages = () => {
   let content;
@@ -17,6 +18,8 @@ const GstPages = () => {
     content = <Notifications />;
   } else if (type === "law") {
     content = <Law />;
+  } else if (type === "forms") {
+    content = <GstForms />;
   }
 
   useEffect(() => {

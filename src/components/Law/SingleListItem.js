@@ -1,41 +1,54 @@
-const SingleListItem = () => {
+import { Link } from "react-router-dom";
+const SingleListItem = (props) => {
+  const { dt, pageNo, index } = props;
+  let sr;
+
+  if (pageNo > 1) {
+    sr = parseInt(pageNo) + parseInt(index) + 1;
+  } else {
+    sr = parseInt(pageNo) + parseInt(index);
+  }
   return (
     <tr>
-      <td>1-</td>
+      <td>{sr}-</td>
       <td>
         <p>
-          <a href="#" className="me-4 text-dark  ">
-            <b>$obj-&gt;title</b>
-          </a>
+          <Link to={"/gst/law/" + dt.slug} className="me-4 text-dark  ">
+            <b>{dt?.title ? dt.title : "--"}</b>
+          </Link>
           <br />
-          <a href="{undefined}" className="me-4">
+          <Link to={"/gst/law/" + dt.slug} className="me-4">
             <span>
-              <b>Court</b>:$obj-&gt;court-&gt;name
+              <b>Court</b>:{dt?.court?.name ? dt.court.name : "--"}
             </span>
-          </a>
-          <a href="{undefined}" className="me-4">
+          </Link>
+          <Link to={"/gst/law/" + dt.slug} className="me-4">
             <span>
-              <b>State</b>:{" "}
-            </span>{" "}
-            $obj-&gt;state-&gt;name??"--"{" "}
-          </a>
-          <a href="{undefined}" className="me-4">
+              <b>State</b>:
+            </span>
+            {dt?.state?.name ? dt.state.name : "--"}
+          </Link>
+          <Link to={"/gst/law/" + dt.slug} className="me-4">
             <span>
-              <b>Release Year</b>:{" "}
-            </span>{" "}
-            $obj-&gt;year{" "}
-          </a>
+              <b>Release Year</b>:{dt?.year ? dt.year : "--"}
+            </span>
+            {}
+          </Link>
         </p>
-        <p className="mb-0 leading-tight">
-          {"{"}!!substr($obj-&gt;short_description, 0, 200).'..'??"--"!!{"}"}
-          <a
-            href="route('gst.law_detail',[$obj->slug])"
+        <div className="mb-0 leading-tight">
+          <p
+            dangerouslySetInnerHTML={{
+              __html: dt?.short_description ? dt.short_description : "--",
+            }}
+          />
+          <Link
+            to={"/gst/law/" + dt.slug}
             className="btn btn-outline-success btn-sm employers-btn"
           >
             <i className="fa fa-book" />
             Read More
-          </a>
-        </p>
+          </Link>
+        </div>
       </td>
     </tr>
   );

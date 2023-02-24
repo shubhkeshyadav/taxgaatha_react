@@ -29,8 +29,16 @@ const Listing = (props) => {
   let paginationData;
   if (status === "completed") {
     if (typeof data.data.result != "undefined" && data.data.result.length > 0) {
-      content = data.data.result.map((dt) => {
-        return <SingleItem type={type} key={dt.id} dt={dt} />;
+      content = data.data.result.map((dt, index) => {
+        return (
+          <SingleItem
+            pageNo={pageNo}
+            index={index}
+            type={type}
+            key={dt.id}
+            dt={dt}
+          />
+        );
       });
       paginationData = (
         <Pagination

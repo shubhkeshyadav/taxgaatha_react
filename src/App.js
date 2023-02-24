@@ -26,7 +26,6 @@ function App() {
         <Route path="/aboutus" element=<About /> />
         <Route path="/articles/:category?" element=<Articles /> />
         <Route path="/article/detail/:slug?" element=<Detail /> />
-
         <Route path="/gst/:type" element=<GstPages /> />
         <Route path="/gst/:type/:slug" element=<GstDetailPages /> />
         <Route path="/gst/chapter-detail/:slug" element=<GstChapterDetail /> />
@@ -34,7 +33,6 @@ function App() {
           path="/gst/schedule-detail/:slug"
           element=<GstScheduleDetail />
         />
-
         <Route path="*" element={<h4>Page Not Found</h4>} />
       </Routes>
       <Footer />

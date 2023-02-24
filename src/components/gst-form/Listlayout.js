@@ -1,12 +1,14 @@
 import React from "react";
 
-const ListLayout = (props) => {
+const Listlayout = (props) => {
   return (
     <>
       <section className="sptb">
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">{props.children}</div>
+            <div className="col-lg-12  web-office-order web-paginate-data">
+              {props.children}
+            </div>
           </div>
         </div>
       </section>
@@ -14,4 +16,4 @@ const ListLayout = (props) => {
   );
 };
 
-export default ListLayout;
+export default Listlayout;

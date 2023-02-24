@@ -88,7 +88,7 @@ function Menu() {
               <Link to="/gst/law">GST Law</Link>
             </li>
             <li>
-              <Link to="">GST Form</Link>
+              <Link to="/gst/forms">GST Form</Link>
             </li>
           </ul>
         </li>
