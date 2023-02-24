@@ -55,3 +55,14 @@ export const getScheduleDetail = async (slug) => {
     throw new Error(error.message);
   }
 };
+
+export const notificationOrderDetail = async (param) => {
+  try {
+    const apiurl = URL + "/gst/" + param.type + "/" + param.slug;
+    const response = await fetch(apiurl);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error(error.message);
+  }
+};

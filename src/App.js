@@ -10,10 +10,10 @@ import OurService from "./pages/OurService";
 import Contactus from "./pages/Contactus";
 import About from "./pages/About";
 
-import ActAndRule from "./pages/ActAndRule";
-import ActAndRuleDetail from "./pages/ActAndRuleDetail";
 import GstChapterDetail from "./pages/GstChapterDetail";
 import GstScheduleDetail from "./pages/GstScheduleDetail";
+import GstPages from "./pages/GstPages";
+import GstDetailPages from "./pages/GstDetailPages";
 
 function App() {
   return (
@@ -27,13 +27,15 @@ function App() {
         <Route path="/articles/:category?" element=<Articles /> />
         <Route path="/article/detail/:slug?" element=<Detail /> />
 
-        <Route path="/gst/:type" element=<ActAndRule /> />
-        <Route path="/gst/:type/:slug" element=<ActAndRuleDetail /> />
+        <Route path="/gst/:type" element=<GstPages /> />
+        <Route path="/gst/:type/:slug" element=<GstDetailPages /> />
         <Route path="/gst/chapter-detail/:slug" element=<GstChapterDetail /> />
         <Route
           path="/gst/schedule-detail/:slug"
           element=<GstScheduleDetail />
         />
+
+        <Route path="*" element={<h4>Page Not Found</h4>} />
       </Routes>
       <Footer />
     </WebStates>

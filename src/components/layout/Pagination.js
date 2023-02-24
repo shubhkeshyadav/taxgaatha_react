@@ -13,27 +13,25 @@ const Pagination = (props) => {
   };
 
   return (
-    <div className="center-block text-center">
-      <ReactPaginate
-        breakLabel="..."
-        forcePage={currentPage - 1}
-        nextLabel="Next"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel="Prev"
-        renderOnZeroPageCount={null}
-        containerClassName={"pagination mb-5 mb-lg-0"}
-        pageClassName={"page-item"}
-        pageLinkClassName={"page-link"}
-        activeClassName={"page-item active"}
-        previousClassName={"page-item page-prev"}
-        nextClassName={"page-item page-next"}
-        nextLinkClassName={"page-link"}
-        previousLinkClassName={"page-link"}
-        disabledClassName={"page-item page-prev disabled"}
-      />
-    </div>
+    <ReactPaginate
+      breakLabel="..."
+      forcePage={currentPage - 1}
+      nextLabel="Next"
+      onPageChange={handlePageClick}
+      pageRangeDisplayed={5}
+      pageCount={pageCount}
+      previousLabel="Prev"
+      renderOnZeroPageCount={null}
+      containerClassName={"pagination mb-5 mb-lg-0"}
+      pageClassName={"page-item"}
+      pageLinkClassName={"page-link"}
+      activeClassName={"page-item active"}
+      previousClassName={"page-item page-prev"}
+      nextClassName={"page-item page-next"}
+      nextLinkClassName={"page-link"}
+      previousLinkClassName={"page-link"}
+      disabledClassName={"page-item page-prev disabled"}
+    />
   );
 };
 export default Pagination;

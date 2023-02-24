@@ -17,7 +17,6 @@ const Filters = (props) => {
       obj[event.target.name] = event.target.value;
       return obj;
     });
-    console.log(data);
   };
 
   const applyFilter = () => {

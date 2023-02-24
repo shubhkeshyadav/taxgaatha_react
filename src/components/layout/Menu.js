@@ -79,13 +79,13 @@ function Menu() {
               <Link to="/gst/rules">GST Rules</Link>
             </li>
             <li>
-              <Link to="">GST Notification</Link>
+              <Link to="/gst/notifications">GST Notification</Link>
             </li>
             <li>
-              <Link to="">GST Order</Link>
+              <Link to="/gst/orders">GST Order</Link>
             </li>
             <li>
-              <Link to="">GST Law</Link>
+              <Link to="/gst/law">GST Law</Link>
             </li>
             <li>
               <Link to="">GST Form</Link>
