@@ -14,6 +14,10 @@ import GstChapterDetail from "./pages/GstChapterDetail";
 import GstScheduleDetail from "./pages/GstScheduleDetail";
 import GstPages from "./pages/GstPages";
 import GstDetailPages from "./pages/GstDetailPages";
+import Register from "./pages/auth/Register";
+import Login from "./pages/auth/Login";
+import MyProfile from "./pages/customer/MyProfile";
+import ForgotPassword from "./pages/auth/ForgotPassword";
 
 function App() {
   return (
@@ -33,6 +37,13 @@ function App() {
           path="/gst/schedule-detail/:slug"
           element=<GstScheduleDetail />
         />
+        <Route path="/user/*">
+          <Route path="register" element=<Register /> />
+          <Route path="login" element=<Login /> />
+          <Route path="profile" element=<MyProfile /> />
+          <Route path="reset-password" element=<ForgotPassword /> />
+          <Route path="*" element={<h4>Page Not Found</h4>} />
+        </Route>
         <Route path="*" element={<h4>Page Not Found</h4>} />
       </Routes>
       <Footer />

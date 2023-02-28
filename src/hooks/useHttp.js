@@ -43,10 +43,19 @@ const useHttp = (requestFunction, startWithPending = false) => {
       dispatch({ type: "SEND" });
       try {
         const data = await requestFunction(requestData);
-        if (data.success === true) {
+        if (data.statusCode === 200 && data.success === true) {
           dispatch({ type: "SUCCESS", data: data });
+        } else if (data.statusCode === 422) {
+          ctx.gData.notifyWarning(
+            "Please make sure all fields are filled in correctly"
+          );
+          dispatch({
+            type: "ERROR",
+            error: "Validation Error",
+            data: data.errors,
+          });
         } else {
-          ctx.gData.notifyWarning(data.error);
+          ctx.gData.errorPopup(data.error);
           dispatch({
             type: "ERROR",
             error: data.error || "Something went wrong!",
@@ -54,7 +63,6 @@ const useHttp = (requestFunction, startWithPending = false) => {
           });
         }
       } catch (error) {
-        ctx.gData.notifyWarning(error.message);
         dispatch({
           type: "ERROR",
           error: error.message || "Something went wrong!",

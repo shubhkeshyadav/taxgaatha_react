@@ -14,7 +14,11 @@ const WebStates = (props) => {
     Notiflix.Notify.warning(msg);
   };
 
-  const gData = { notifyWarning };
+  const errorPopup = (msg) => {
+    Notiflix.Report.failure("Error", msg);
+  };
+
+  const gData = { notifyWarning, errorPopup };
 
   const output = { gData, webData, setWebData };
 

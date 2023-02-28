@@ -37,7 +37,7 @@ const SingleItem = (props) => {
             <span>
               <b>Release Year</b>:
             </span>
-            {props.year}
+            {props.dt.year}
           </a>
         </p>
         <p
